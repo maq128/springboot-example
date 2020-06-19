@@ -35,3 +35,15 @@ application.properties 文件是程序运行后加载配置参数的文件，现
 WebMvcConfig.java 不是必需的，如果需要的话，可以用来对 SpringMVC 做一些初始化配置。
 
 IndexController.java 用于处理具体的请求。文件名和方法名都不重要，靠注解来映射处理关系。
+
+## v2
+
+引入了 Swagger 模块。
+
+ApiController.java 是新增的程序文件，用于处理具体的 API 请求，比如这个：
+
+http://localhost:8080/api/plus?a=1&b=2
+
+SwaggerConfig.java 不是必需的，但有了它 Swagger 就可以自动生成一个交互页面，用于浏览和测试每个 API 接口。访问入口是：
+
+http://localhost:8080/swagger-ui.html
