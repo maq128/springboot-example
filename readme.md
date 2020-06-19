@@ -27,3 +27,11 @@ pom.xml 是 Maven 的配置文件。
 程序文件只有一个 ExampleApplication.java 作为 SpringBoot 的启动点。
 
 application.properties 文件是程序运行后加载配置参数的文件，现在还是空的，因为还没有实现任何功能。
+
+## v1
+
+引入了 spring-boot-starter-web 模块，这里面就包含了 SpringMVC。
+
+WebMvcConfig.java 不是必需的，如果需要的话，可以用来对 SpringMVC 做一些初始化配置。
+
+IndexController.java 用于处理具体的请求。文件名和方法名都不重要，靠注解来映射处理关系。
